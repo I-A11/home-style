@@ -18,3 +18,13 @@ ul {
 a {
   text-decoration: none;
 }
+
+.maxWidth {
+  max-width: 1170px;
+}
+
+/* .navCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
