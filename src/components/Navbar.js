@@ -10,7 +10,7 @@ import { useUserContext } from "../context/user_context";
 const Navbar = () => {
   return (
     <nav className='h-20 flex items-center justify-center mt-3'>
-      <div className='w-[90vw] m-0 mx-auto maxWidth md:lg:grid grid-cols-[1fr_500px_1fr] md:lg:items-center'>
+      <div className='w-[90vw] m-0 mx-auto maxWidth md:lg:grid grid-cols-[auto_1fr_auto] md:lg:items-center'>
         <div className='flex items-center justify-between'>
           <Link to='/'>
             <img className='w-52 -ml-4 ' src={Logo} alt='logo' />
