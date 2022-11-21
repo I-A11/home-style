@@ -12,7 +12,7 @@ const CartButtons = () => {
         Cart
         <span className='flex items-center relative'>
           <FaShoppingCart className='h-6 ml-1' />
-          <span className='absolute -top-3 -right-4 w-4 h-4 bg-yellow-500 flex items-center justify-center rounded-3xl text-xs p-[11px]'>
+          <span className='absolute -top-3 -right-4 w-4 h-4 bg-blue-400 flex items-center justify-center rounded-3xl text-xs p-[11px]'>
             12
           </span>
         </span>

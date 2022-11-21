@@ -16,7 +16,7 @@ const Navbar = () => {
             <img className='w-52 -ml-4 ' src={Logo} alt='logo' />
           </Link>
           <button
-            className='bg-transparent border-transparent text-yellow-700 text-3xl cursor-pointer md:lg:hidden'
+            className='bg-transparent border-transparent text-blue-800 text-3xl cursor-pointer md:lg:hidden'
             type='button'
           >
             <FaBars />
