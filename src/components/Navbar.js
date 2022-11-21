@@ -8,6 +8,8 @@ import { useProductsContext } from "../context/products_context";
 import { useUserContext } from "../context/user_context";
 
 const Navbar = () => {
+  const { openSidebar } = useProductsContext();
+
   return (
     <nav className='h-20 flex items-center justify-center mt-3'>
       <div className='w-[90vw] m-0 mx-auto maxWidth md:lg:grid grid-cols-[auto_1fr_auto] md:lg:items-center'>
@@ -19,7 +21,7 @@ const Navbar = () => {
             className='bg-transparent border-transparent text-blue-800 text-3xl cursor-pointer md:lg:hidden'
             type='button'
           >
-            <FaBars />
+            <FaBars onClick={openSidebar} />
           </button>
         </div>
         <ul className='hidden md:lg:flex justify-center items-center'>

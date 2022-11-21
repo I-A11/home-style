@@ -6,9 +6,14 @@ import { useCartContext } from "../context/cart_context";
 import { useUserContext } from "../context/user_context";
 
 const CartButtons = () => {
+  const { closeSidebar } = useProductsContext();
   return (
     <div className=' grid grid-cols-[1fr_1fr] items-center w-56'>
-      <Link to='/cart' className='text-gray-700 text-xl flex items-center'>
+      <Link
+        to='/cart'
+        className='text-gray-700 text-xl flex items-center'
+        onClick={closeSidebar}
+      >
         Cart
         <span className='flex items-center relative'>
           <FaShoppingCart className='h-6 ml-1' />

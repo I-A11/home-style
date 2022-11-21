@@ -7,10 +7,12 @@ import { links } from "../utils/constants";
 import CartButtons from "./CartButtons";
 
 const Sidebar = () => {
-  const isOpen = false;
+  const { isSidebarOpen, closeSidebar } = useProductsContext();
   return (
     <div className='text-center'>
-      <aside className={`${isOpen ? "sidebar show-sidebar" : "sidebar"}`}>
+      <aside
+        className={`${isSidebarOpen ? "sidebar show-sidebar" : "sidebar"}`}
+      >
         <div className='flex justify-between items-center py-4 px-6'>
           <img
             src={logo}
@@ -20,6 +22,7 @@ const Sidebar = () => {
           <button
             type='button'
             className='text-3xl bg-transparent text-red-800'
+            onClick={closeSidebar}
           >
             <FaTimes />
           </button>
@@ -29,6 +32,7 @@ const Sidebar = () => {
             return (
               <li key={id}>
                 <Link
+                  onClick={closeSidebar}
                   className='block text-left text-lg font-semibold capitalize text-gray-800 px-6 py-4 transition-all ease-linear  hover:px-8 hover:py-4 hover:bg-gray-200'
                   to={url}
                 >
@@ -39,6 +43,7 @@ const Sidebar = () => {
           })}
           <li>
             <Link
+              onClick={closeSidebar}
               className='block text-left text-lg font-semibold capitalize text-gray-800 px-6 py-4 transition-all ease-linear  hover:px-8 hover:py-4 hover:bg-gray-200'
               to='./checkout'
             >
@@ -46,7 +51,7 @@ const Sidebar = () => {
             </Link>
           </li>
         </ul>
-        <div className='my-8 flex justify-center'>
+        <div className='my-8 flex justify-center '>
           <CartButtons />
         </div>
       </aside>
