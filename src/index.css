@@ -58,8 +58,39 @@ a {
   background: #8383ee;
 }
 
+.page {
+  min-height: calc(100vh - (20vh + 10rem));
+}
+/* section */
+.section {
+  padding: 5rem 0;
+}
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .sidebar {
     display: none;
   }
+}
+
+.title {
+  text-align: center;
+}
+.title .underline {
+  width: 6rem;
+  height: 0.25rem;
+  background: #49a6e9;
+  background: #5656f2;
+  margin-left: auto;
+  margin-right: auto;
 }
