@@ -25,7 +25,7 @@ const Services = () => {
                 key={id}
                 className='bg-blue-400 text-center py-10 px-8 rounded'
               >
-                <span className='w-16 h-16 grid my-0 mx-auto items-center justify-center mb-4 text-4xl'>
+                <span className='bg-red-100 rounded-full w-16 h-16 grid my-0 mx-auto items-center justify-center mb-4 text-4xl text-cyan-800'>
                   {icon}
                 </span>
                 <h4 className='text-center text-gray-800 text-3xl capitalize font-semibold'>
