@@ -5,7 +5,7 @@ import heroBcg2 from "../assets/home-hero.avif";
 
 const Hero = () => {
   return (
-    <div className='section-center min-h-[50vh] grid items-center lg:min-h-[calc(100vh-5rem)] lg:grid-cols-2 gap-32'>
+    <div className='section-center min-h-[40vh] grid items-center lg:min-h-[calc(100vh-5rem)] lg:grid-cols-2 gap-32'>
       <div>
         <h1 className='text-4xl text-gray-900 font-semibold capitalize'>
           design your <br />
