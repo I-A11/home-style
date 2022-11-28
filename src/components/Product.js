@@ -21,7 +21,7 @@ const Product = ({ image, name, price, id }) => {
       </div>
       <footer className='flex justify-between mt-2 mx-1'>
         <h5 className='capitalize font-semibold text-gray-700'>{name}</h5>
-        <p className='font-semibold text-blue-800'>{price}</p>
+        <p className='font-semibold text-blue-800'>{formatPrice(price)}</p>
       </footer>
     </div>
   );
