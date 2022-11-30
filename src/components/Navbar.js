@@ -30,7 +30,7 @@ const Navbar = () => {
             return (
               <li className='mx-2' key={id}>
                 <Link
-                  className='text-gray-700 text-base font-semibold capitalize p-2 hover:border-b-2 hover:border-yellow-700'
+                  className='text-gray-700 text-base font-semibold capitalize p-2 hover:border-b-2 hover:border-blue-700'
                   to={url}
                 >
                   {text}
