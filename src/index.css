@@ -128,3 +128,7 @@ a {
 .container:hover .link {
   opacity: 1;
 }
+
+.active {
+  box-shadow: 0px 0px 0px 2px #050567;
+}

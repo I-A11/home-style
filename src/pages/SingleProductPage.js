@@ -64,7 +64,7 @@ const SingleProductPage = () => {
           back to products
         </Link>
         <div className='grid gap-16 mt-8 lg:grid-cols-2'>
-          <ProductImages />
+          <ProductImages images={images} />
           <section className=''>
             <h2 className='text-3xl font-semibold text-gray-800 capitalize'>
               {name}
