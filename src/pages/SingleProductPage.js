@@ -69,7 +69,7 @@ const SingleProductPage = () => {
             <h2 className='text-3xl font-semibold text-gray-800 capitalize'>
               {name}
             </h2>
-            <Stars />
+            <Stars stars={stars} reviews={reviews} />
             <h5 className='text-blue-700 font-semibold text-lg'>
               {formatPrice(price)}
             </h5>
