@@ -1,7 +1,22 @@
 import React from "react";
+import { useFilterContext } from "../context/filter_context";
+import GridView from "./GridView";
+import ListView from "./ListView";
 
 const ProductList = () => {
-  return <div>ProductList</div>;
+  const { filtered_products: products, grid_view } = useFilterContext();
+  if (products.length < 1) {
+    return (
+      <h5 className='text-lg font-semibold mt-4'>
+        Sorry, no products matched your search...
+      </h5>
+    );
+  }
+  if (grid_view === false) {
+    return <ListView products={products} />;
+  }
+
+  return <GridView products={products}>ProductList</GridView>;
 };
 
 export default ProductList;
