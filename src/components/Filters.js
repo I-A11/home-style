@@ -24,14 +24,12 @@ const Filters = () => {
   const companies = getUniqueValues(all_products, "company");
   const colors = getUniqueValues(all_products, "colors");
 
-  console.log(colors);
-
   return (
     <div>
       <div>
         <form onSubmit={(e) => e.preventDefault()}>
           {/* search input */}
-          <div className='mb-5'>
+          <div className='mb-3'>
             <input
               type='text'
               name='text'
@@ -41,7 +39,90 @@ const Filters = () => {
               onChange={updateFilters}
             />
           </div>
-          {/* search input */}
+          {/* end of search input */}
+          {/*  categories */}
+          <div className='mb-5 mt-6'>
+            <h5 className='mb-2 font-semibold tracking-wide'>Category</h5>
+            <div>
+              {categories.map((c, index) => {
+                return (
+                  <button
+                    className={`block my-1 py-1 capitalize bg-transparent border-none  tracking-wide text-gray-700 font-semibold ${
+                      category === c.toLowerCase() ? "text-blue-600" : null
+                    }`}
+                    key={index}
+                    onClick={updateFilters}
+                    name='category'
+                    type='button'
+                  >
+                    {c}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+          {/* end of categories */}
+          {/*  companies */}
+          <div className='mb-5 mt-4'>
+            <h5 className='mb-2 font-semibold tracking-wide'>Company</h5>
+            <select
+              className='bg-gray-200 rounded-md border-transparent p-1'
+              name='company'
+              value={company}
+              onChange={updateFilters}
+            >
+              {companies.map((c, index) => {
+                return (
+                  <option key={index} value={c}>
+                    {c}
+                  </option>
+                );
+              })}
+            </select>
+          </div>
+          {/* end of companies */}
+          {/* colors */}
+          <div className='mb-5'>
+            <h5 className='mb-2 font-semibold tracking-wide'>Colors</h5>
+            <div className='flex items-center'>
+              {colors.map((c, index) => {
+                if (c === "all") {
+                  return (
+                    <button
+                      key={index}
+                      name='color'
+                      onClick={updateFilters}
+                      data-color='all'
+                      className={`flex items-center justify-center mr-2  ${
+                        color === "all" ? "opacity-100" : "opacity-50"
+                      }`}
+                    >
+                      All
+                    </button>
+                  );
+                }
+                return (
+                  <button
+                    className={`flex items-center justify-center w-4 h-4 rounded-full bg-black mr-2 border-none  ${
+                      color === c ? "opacity-100" : "opacity-50"
+                    }`}
+                    data-color={c}
+                    style={{ background: c }}
+                    onClick={updateFilters}
+                    key={index}
+                    name='color'
+                  >
+                    {color === c ? (
+                      <div className='text-white text-[0.5rem]'>
+                        <FaCheck />
+                      </div>
+                    ) : null}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+          {/* end of colors */}
         </form>
       </div>
     </div>
