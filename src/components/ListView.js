@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const ListView = ({ products }) => {
   return (
-    <div className='grid gap-y-12'>
+    <div className='grid gap-y-12 mb-10'>
       {products.map((product) => {
         const { id, image, name, price, description } = product;
         return (
