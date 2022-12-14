@@ -152,7 +152,7 @@ const Filters = () => {
         </form>
         <button
           type='button'
-          className='bg-red-800 text-white capitalize py-1 px-4 rounded-md'
+          className='bg-red-800 md:mb-10 text-white capitalize py-1 px-4 rounded-md'
           onClick={clearFilters}
         >
           clear filters
