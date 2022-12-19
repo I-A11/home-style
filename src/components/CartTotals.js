@@ -19,9 +19,9 @@ const CartTotals = () => {
           order total: <span>{formatPrice(total_amount + shipping_fee)}</span>
         </h4>
       </article>
-      <Link to='/checkout' className='btn mt-6 mx-auto w-72 text-center'>
+      {/* <Link to='/checkout' className='btn mt-6 mx-auto w-72 text-center'>
         proceed to checkout
-      </Link>
+      </Link> */}
     </div>
   );
 };

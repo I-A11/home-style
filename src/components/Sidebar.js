@@ -42,16 +42,16 @@ const Sidebar = () => {
             );
           })}
           <li>
-            <Link
+            {/* <Link
               onClick={closeSidebar}
               className='block text-left text-lg font-semibold capitalize text-gray-800 px-6 py-4 transition-all ease-linear  hover:px-8 hover:py-4 hover:bg-gray-200'
               to='./checkout'
             >
               checkout
-            </Link>
+            </Link> */}
           </li>
         </ul>
-        <div className='my-8 flex justify-center '>
+        <div className='my-8 flex justify-start ml-6 '>
           <CartButtons />
         </div>
       </aside>

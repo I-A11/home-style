@@ -23,7 +23,7 @@ const CartButtons = () => {
           </span>
         </span>
       </Link>
-      <button
+      {/* <button
         type='button'
         className='flex items-center bg-transparent border-transparent text-xl cursor-pointer text-gray-700'
       >
@@ -31,7 +31,7 @@ const CartButtons = () => {
         <span className='ml-1'>
           <FaUserPlus />
         </span>
-      </button>
+      </button> */}
     </div>
   );
 };
