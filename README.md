@@ -14,18 +14,18 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ### Technologies
-React.Js./
-Tailwind./
-CSS./
-JavaScript./
+React.Js.\
+Tailwind.\
+CSS.\
+JavaScript.\
 
 ### Story
 
 Build up a project using:.\
-React hooks: UseState, UseEffect, UseContext and UseReduce..\
-Project is a home store where you can see products in Product page..\
+React hooks: UseState, UseEffect, UseContext and UseReduce.\
+Project is a home store where you can see products in Product page.\
 Useing JavaScript methods like: Sort, Filtering for searching and filtering.\
-In products page..\
-Build cart where you can add products, increase or decrese amount or clear the cart..\
+In products page.\
+Build cart where you can add products, increase or decrese amount or clear the cart.\
 Store the selected products in localStorage.
 
