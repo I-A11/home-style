@@ -7,8 +7,12 @@ import { useCartContext } from "../context/cart_context";
 const CartItem = ({ id, image, name, color, price, amount }) => {
   const { removeItem, toggleAmount } = useCartContext();
 
-  const increase = () => {};
-  const decrease = () => {};
+  const increase = () => {
+    toggleAmount(id, "inc");
+  };
+  const decrease = () => {
+    toggleAmount(id, "dec");
+  };
 
   return (
     <div className='grid grid-cols-[200px_auto_auto] grid-rows-[75px] gap-x-4 gap-y-12 items-center mb-12 md:grid-cols-[300px_1fr_1fr_1fr_auto]  md:items-center md:grid-rows-[75px] '>
