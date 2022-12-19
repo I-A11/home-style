@@ -1,4 +1,4 @@
-import { act } from "react-dom/test-utils";
+// import { act } from "react-dom/test-utils";
 import {
   ADD_TO_CART,
   CLEAR_CART,

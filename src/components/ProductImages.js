@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { GiLogging } from "react-icons/gi";
+// import { GiLogging } from "react-icons/gi";
 
 const ProductImages = ({ images = [{ url: "" }] }) => {
   const [main, setMain] = useState(images[0]);
