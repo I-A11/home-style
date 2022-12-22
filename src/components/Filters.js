@@ -138,7 +138,7 @@ const Filters = () => {
           </div>
           {/* end of price */}
           {/*  shipping */}
-          <div className='mb-5 mt-4 grid grid-cols-[auto_1fr] items-center capitalize  text-base max-w-[150px] text-gray-700'>
+          <div className='mb-5 mt-4 grid grid-cols-[auto_1fr] items-center capitalize gap-x-8  text-base max-w-[150px] text-gray-700'>
             <label htmlFor='shipping'>free shipping</label>
             <input
               type='checkbox'
