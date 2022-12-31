@@ -138,3 +138,9 @@ a {
 .active {
   box-shadow: 0px 0px 0px 2px #050567;
 }
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
